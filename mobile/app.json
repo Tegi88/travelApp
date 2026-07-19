@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "טיולים",
+    "slug": "travel-app-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#1f83fc"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.travelapp.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1f83fc"
+      },
+      "package": "com.travelapp.mobile"
+    }
+  }
+}
