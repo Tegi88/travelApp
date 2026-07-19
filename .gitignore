@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# next.js
+web/.next/
+web/out/
+
+# expo
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+
+# build output
+shared/dist/
+*.tsbuildinfo
+
+# env
+.env
+.env.local
+.env*.local
+!.env.example
+
+# misc
+.DS_Store
+*.log
+npm-debug.log*
