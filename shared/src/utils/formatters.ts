@@ -7,7 +7,10 @@ export function formatPrice(amount: number, currency = "USD"): string {
 export function formatDuration(minutes: number): string {
   const h = Math.floor(minutes / 60);
   const m = minutes % 60;
-  return m > 0 ? `${h}ש ${m}ד` : `${h}ש`;
+  // A space between each number and its Hebrew letter is required, not just style -
+  // gluing a digit directly to a Hebrew letter (e.g. "10ש") breaks the Unicode
+  // bidi algorithm and renders with the digits and letters visually reordered.
+  return m > 0 ? `${h} ש' ${m} ד'` : `${h} ש'`;
 }
 
 export function formatDate(iso: string): string {
